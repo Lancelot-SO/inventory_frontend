@@ -13,7 +13,7 @@ main {
   width: 230px;
   height: 100vh;
   flex-shrink: 0;
-  background-color: var(--color-white);
+  background-color: var(--dark-blue);
   overflow: auto;
   color: var(-color-dark);
   transition: all 0.5s;
@@ -23,7 +23,7 @@ main {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  // border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
   transition: all 0.5s;
   background-color: var(--dark-blue);
   height: 70px;
@@ -49,10 +49,11 @@ main {
 .sidebar-item {
   padding: 0.75em 1em;
   display: block;
-  // border-radius: 5px;
-  // border-bottom: 2px solid #ccc;
+  border-radius: 15px;
+  border-bottom: 2px solid #ccc;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 0.15s;
+  margin-top: 40px;
 }
 
 .s-parent {
@@ -106,13 +107,13 @@ main {
 }
 
 .s-child {
-  border: 1px solid #ccc;
   border-radius: 3px;
   margin-top: 5px;
 }
 
 .s-child:hover {
-  border: 1px solid var(--light-blue);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 a {
@@ -127,7 +128,6 @@ a {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #eee;
 }
 
 .active::after {
